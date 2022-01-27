@@ -16,7 +16,7 @@ String validateEmail(String value) {
       "\\." +
       "[a-zA-Z0-9][a-zA-Z0-9\\-]{0,25}" +
       ")+";
-  RegExp regExp = new RegExp(p);
+  RegExp regExp = RegExp(p);
   if (regExp.hasMatch(value)) {
     return null;      
   }
