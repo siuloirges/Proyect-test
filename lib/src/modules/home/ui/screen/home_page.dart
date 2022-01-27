@@ -1,5 +1,9 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:proyect_test/src/modules/Posts/ui/widgets/list_post.dart';
+import 'package:proyect_test/src/modules/load_picture/ui/screen/load_picture.dart';
 import 'package:proyect_test/src/utils/components/ui/styles/styles.dart';
+import 'package:proyect_test/src/utils/components/ui/widgets/global_widgets.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key key}) : super(key: key); 
@@ -14,21 +18,20 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
   
     final _kTabPages = <Widget>[
-      Scaffold(
-        body: _sitio(),
-      ),
-      crearProductos()
+     const LoadPicture(),
+     const PostsList()
     ];
 
     final _kTabs = <Tab>[
-      const Tab(text: '1'),
-      const Tab(text: '2')
+      const Tab(text: 'Upload a picture'),
+      const Tab(text: 'HTTP Request')
     ];
     return DefaultTabController(
       length: _kTabs.length,
       child: Scaffold(
-        // floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+
         appBar: AppBar(
+          automaticallyImplyLeading: false,
           elevation: 1,
           backgroundColor: primaryColor,
           centerTitle: true,
@@ -37,24 +40,23 @@ class _HomePageState extends State<HomePage> {
             indicatorColor: Colors.white,
             tabs: _kTabs,
           ),
-
+          actions: [IconButton(onPressed: (){ logOut(context); },icon: const Icon(Icons.logout_rounded,color: Colors.white),)],
         ),
 
-        // drawer: Drawer(child: crearmenulateral(context)),
-//floatingActionButton: ,
         body: TabBarView(
           children: _kTabPages,
         ),
+
+        
       ),
     );
   }
 
-  Widget _sitio() {
-    return Container();
-  }
-
-  Widget crearProductos() {
-    return Container();
+  logOut(context) async {
+    // load(context);
+    await FirebaseAuth.instance.signOut();
+    // Navigator.pop(context);
+    Navigator.pushReplacementNamed(context, 'login');
   }
 
 }
