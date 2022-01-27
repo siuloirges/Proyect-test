@@ -1,8 +1,6 @@
- import 'dart:convert';
-
+import 'dart:convert';
 import 'package:flutter/cupertino.dart';
 import 'package:proyect_test/src/modules/posts/model/post_model.dart';
-import 'package:proyect_test/src/utils/components/ui/widgets/global_widgets.dart';
 import 'package:proyect_test/src/utils/providers/http_provider.dart';
 
 class PostsProvider extends ChangeNotifier {
