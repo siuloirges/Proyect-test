@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 import 'package:proyect_test/src/modules/sign_up/ui/widgets/body_login_page.dart';
 import 'package:proyect_test/src/utils/components/ui/styles/styles.dart';
-import 'package:proyect_test/src/modules/load_picture/provider/load_picture_provider.dart';
 
 class RegisterPage extends StatelessWidget {
   RegisterPage({Key key}) : super(key: key);

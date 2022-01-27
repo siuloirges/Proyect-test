@@ -1,42 +1,34 @@
 {
   "project_info": {
-    "project_number": "1059780990674",
-    "firebase_url": "https://pedix-974e0.firebaseio.com",
-    "project_id": "pedix-974e0",
-    "storage_bucket": "pedix-974e0.appspot.com"
+    "project_number": "395621324085",
+    "project_id": "testing-511fd",
+    "storage_bucket": "testing-511fd.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1059780990674:android:05f0c0de73c6d0bd783f0b",
+        "mobilesdk_app_id": "1:395621324085:android:1ac00163a763b64737e87c",
         "android_client_info": {
           "package_name": "com.example.proyect_test"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1059780990674-f6ncgamfucvf38gkq7kc6mdkfo6k8jh4.apps.googleusercontent.com",
+          "client_id": "395621324085-ahldl14gnlnlr7304ii4brps4foq56d7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD6rMgoaUKMLqHhuSDU1dL-LWt9TZQBJjA"
+          "current_key": "AIzaSyBGJojnKwS0FhDZfoDxjWOu-YAq_UZspGI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1059780990674-f6ncgamfucvf38gkq7kc6mdkfo6k8jh4.apps.googleusercontent.com",
+              "client_id": "395621324085-ahldl14gnlnlr7304ii4brps4foq56d7.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "1059780990674-snppo8ahcjt1617i7737aapub6r2vgta.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.lulosys.pedix"
-              }
             }
           ]
         }
@@ -44,79 +36,28 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1059780990674:android:6182d23f28d3de97783f0b",
-        "android_client_info": {
-          "package_name": "com.lulosys.pedix"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "1059780990674-ptjtccicpko7rpmvuevf2bh0dq5e0mj7.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.lulosys.pedix",
-            "certificate_hash": "bbd5131b47ef519fda7d7833758476e44382a06b"
-          }
-        },
-        {
-          "client_id": "1059780990674-f6ncgamfucvf38gkq7kc6mdkfo6k8jh4.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyD6rMgoaUKMLqHhuSDU1dL-LWt9TZQBJjA"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "1059780990674-f6ncgamfucvf38gkq7kc6mdkfo6k8jh4.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "1059780990674-snppo8ahcjt1617i7737aapub6r2vgta.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.lulosys.pedix"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:1059780990674:android:5473a00c80bb7acc783f0b",
+        "mobilesdk_app_id": "1:395621324085:android:a6d921bea00ec2e237e87c",
         "android_client_info": {
           "package_name": "com.test.proyect_test"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1059780990674-f6ncgamfucvf38gkq7kc6mdkfo6k8jh4.apps.googleusercontent.com",
+          "client_id": "395621324085-ahldl14gnlnlr7304ii4brps4foq56d7.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD6rMgoaUKMLqHhuSDU1dL-LWt9TZQBJjA"
+          "current_key": "AIzaSyBGJojnKwS0FhDZfoDxjWOu-YAq_UZspGI"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "1059780990674-f6ncgamfucvf38gkq7kc6mdkfo6k8jh4.apps.googleusercontent.com",
+              "client_id": "395621324085-ahldl14gnlnlr7304ii4brps4foq56d7.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "1059780990674-snppo8ahcjt1617i7737aapub6r2vgta.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.lulosys.pedix"
-              }
             }
           ]
         }

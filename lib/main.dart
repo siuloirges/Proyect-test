@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
       child: OKToast(
         handleTouch: true,
         child: MaterialApp(
-          locale: const Locale('es', 'CO'),
+          // locale: const Locale('es', 'CO'),
           debugShowCheckedModeBanner: false,
           title: 'Technical Test',
           initialRoute: 'login',
