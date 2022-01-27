@@ -1,9 +1,10 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:proyect_test/src/modules/Posts/ui/widgets/list_post.dart';
 import 'package:proyect_test/src/modules/load_picture/ui/screen/load_picture.dart';
+import 'package:proyect_test/src/modules/posts/provider/posts_provider.dart';
 import 'package:proyect_test/src/utils/components/ui/styles/styles.dart';
-import 'package:proyect_test/src/utils/components/ui/widgets/global_widgets.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key key}) : super(key: key); 
@@ -14,8 +15,11 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  PostsProvider postsProvider;
+  
   @override
   Widget build(BuildContext context) {
+         postsProvider = Provider.of<PostsProvider>(context);
   
     final _kTabPages = <Widget>[
      const LoadPicture(),
@@ -31,6 +35,7 @@ class _HomePageState extends State<HomePage> {
       child: Scaffold(
 
         appBar: AppBar(
+
           automaticallyImplyLeading: false,
           elevation: 1,
           backgroundColor: primaryColor,
@@ -40,7 +45,10 @@ class _HomePageState extends State<HomePage> {
             indicatorColor: Colors.white,
             tabs: _kTabs,
           ),
-          actions: [IconButton(onPressed: (){ logOut(context); },icon: const Icon(Icons.logout_rounded,color: Colors.white),)],
+          actions: [
+            IconButton(onPressed: (){ logOut(context); },icon: const Icon(Icons.logout_rounded,color: Colors.white),),
+            IconButton(onPressed: (){postsProvider.reload(); },icon: const Icon(Icons.replay_rounded,color: Colors.white),)
+          ],
         ),
 
         body: TabBarView(

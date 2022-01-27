@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:proyect_test/src/modules/posts/provider/posts_provider.dart';
 import 'package:proyect_test/src/modules/posts/model/post_model.dart';
+import 'package:proyect_test/src/utils/components/ui/styles/styles.dart';
 
 class PostsList extends StatefulWidget {
   const PostsList({Key key}) : super(key: key);
@@ -21,15 +22,13 @@ class PostsListState extends State<PostsList> {
    
     return Padding(
       padding: const EdgeInsets.all(15.0),
-      child: SingleChildScrollView(
-        child: Column(
-          children:viewPost(),
-        ),
+      child: Center(
+        child: postsProvider.getPostsList.isEmpty ? loading() : viewPost(),
       ),
     );
   }
 
-  List<Widget> viewPost(){
+  Widget viewPost(){
    List<Widget> widgets = [];
 
    double delay = 20; 
@@ -38,8 +37,12 @@ class PostsListState extends State<PostsList> {
      delay+= 20;
    }
 
-   return widgets;
+   return SingleChildScrollView(child: Column(children: widgets,));
 
+  }
+
+  Widget loading(){
+    return const CircularProgressIndicator(color: Colors.white,backgroundColor: primaryColor,strokeWidth: 1,);
   }
 
  Widget post( Post element,delay){

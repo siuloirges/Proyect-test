@@ -21,7 +21,18 @@ class PostsProvider extends ChangeNotifier {
     final post = postFromJson(jsonEncode(data));
     _postsList = post;
     notifyListeners();
-    // return data;
-   }
+  }
+
+
+  dynamic reload() async {
+
+    _postsList = [];
+    notifyListeners();
+    await getPosts();
+    notifyListeners();
+
+  }
+
+
    
  }
